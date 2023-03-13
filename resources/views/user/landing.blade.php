@@ -30,7 +30,7 @@
                             <a class="nav-link ml-3 text-white" href="{{ route('pekat.laporan') }}">Laporan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ml-3 text-white" href="{{ route('pekat.logout') }}" style="text-decoration: underline">{{ Auth::guard('masyarakat')->user()->nama }}</a>
+                            <a class="nav-link ml-3 text-white" href="{{ route('pekat.logout') }}"style="text-decoration: underline">{{ Auth::guard('masyarakat')->user()->nama }}</a>
                         </li>
                     </ul>
                     @else

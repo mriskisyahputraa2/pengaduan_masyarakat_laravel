@@ -22,6 +22,13 @@ class DatabaseSeeder extends Seeder
             'telp' => '0852523434',
             'level' => 'admin'
         ]);
+        \App\Models\Petugas::create([
+            'nama_petugas' => 'Petugas',
+            'username' => 'petugas',
+            'password' => Hash::make('petugas'),
+            'telp' => '0852523434',
+            'level' => 'petugas'
+        ]);
     }
 
 
