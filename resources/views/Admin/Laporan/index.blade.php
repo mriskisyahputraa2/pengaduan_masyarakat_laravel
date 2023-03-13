@@ -4,9 +4,14 @@
 
 @section('header', 'Laporan Pengaduan')
 
+@section('css')
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+@endsection
+
 @section('content')
     <div class="row">
-        <button class="float-let btn-btn-primary" onclick="window.print();">EXPORT</button>
+        <button class="btn btn-warning m-2" onclick="window.print();">EXPORT</button>
+
         <table id="pengaduanTable" class="table" >
             <thead>
                 <tr>

@@ -69,10 +69,10 @@
                         <i class="fas fa-align-justify"></i>
                     </button>
                     <div class="ml-2">@yield('header')</div>
-
+                    
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <a href="" class="btn btn-white btn-sm">{{ Auth::guard('admin')->user()->nama_petugas }}</a>
+                            <a href="{{ route('pekat.logout') }}" class="btn btn-white btn-sm">{{ Auth::guard('admin')->user()->nama_petugas }}</a>
                             {{-- <a href="" class="btn btn-white btn-sm">Login</a> --}}
                         </ul>
                     </div>
